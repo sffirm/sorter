@@ -38,7 +38,6 @@ class Sorter {
           }
         }
         else{
-          // console.log(this.comporator(this.list[index1],this.list[index2]));
           if(this.comporator(this.list[index1],this.list[index2]) > 0){
             var numb = this.list[index1];
             this.list[index1] = this.list[index2];
@@ -51,7 +50,6 @@ class Sorter {
 
   setComparator(compareFunction) {
     this.comporator = compareFunction;
-    // console.log(this.comporator);
   }
 }
 
